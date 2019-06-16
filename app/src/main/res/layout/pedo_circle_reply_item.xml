@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pedo_item_selector"
+              android:orientation="vertical"
+              android:paddingLeft="16dp"
+              android:paddingTop="20dp"
+              android:paddingRight="16dp"
+             >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/bb_tv_search_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_181818"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="全部回答"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="更多"
+            android:padding="3dp"
+            android:drawableRight="@drawable/pedo_search_arrow"
+            android:visibility="gone"
+            android:textColor="#49C9C9"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootview"
+        android:orientation="vertical"
+     >
+
+        <include layout="@layout/pedo_circle_hot_match_item_layout"/>
+        <include layout="@layout/pedo_circle_hot_match_item_layout"/>
+        <include layout="@layout/pedo_circle_hot_match_item_layout"/>
+    </LinearLayout>
+
+</LinearLayout>

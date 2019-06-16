@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pedo_me_icon"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/pedo_me_edit"/>
+
+        <LinearLayout
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="16dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="63dp"
+                        android:gravity="center"
+                        android:text="贾斯汀比伯"
+                        android:textColor="#333333"
+                        android:textSize="24dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ID: 455876436"
+                        android:textColor="#999999"
+                        android:textSize="15dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="17dp"
+                        android:background="#F5F5F5"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:background="@drawable/pedo_me_line"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_record"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="我的记录"
+                            android:textColor="#181818"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/me_top_item_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/pedo_me_default"
+            fresco:roundAsCircle="true"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/topview"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="100dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                    android:id="@+id/pedo_me_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:isMeItem="true"
+                    app:analysisContent="@string/pedo_me_step"
+                    app:iconTop="@drawable/pedo_me_step"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+                <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                    android:id="@+id/pedo_me_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:isMeItem="true"
+                    app:analysisContent="@string/pedo_me_friend"
+                    app:iconTop="@drawable/pedo_me_friend"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+                <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                    android:id="@+id/pedo_me_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:isMeItem="true"
+                    app:analysisContent="@string/pedo_me_activity"
+                    app:iconTop="@drawable/pedo_me_activity"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+                <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                    android:id="@+id/pedo_me_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:isMeItem="true"
+                    app:analysisContent="@string/pedo_me_collect"
+                    app:iconTop="@drawable/pedo_me_collect"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+                <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                    android:id="@+id/pedo_me_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:isMeItem="true"
+                    app:analysisContent="@string/pedo_me_setting"
+                    app:iconTop="@drawable/pedo_me_setting"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

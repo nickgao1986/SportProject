@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#F5F5F5">
+
+
+    <include
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        layout="@layout/pedo_detail_bottom_item"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/bottom_layout"
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
+
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp">-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/avatar"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/pedo_reply_icon">-->
+            <!--</ImageView>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_toRightOf="@+id/avatar"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="热门话题"-->
+                    <!--android:textColor="#444444"-->
+                    <!--android:textSize="15dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="9dp"-->
+                    <!--android:text="16小时前"-->
+                    <!--android:textColor="#AAAAAA"-->
+                    <!--android:textSize="12sp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/pedo_attention_btn"-->
+                <!--android:gravity="center"-->
+                <!--android:text="关注"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<com.babytree.apps.pregnancy11.mypedometer.fragment.CardModuleFolderView-->
+            <!--android:id="@+id/content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="21dp"-->
+            <!--&gt;-->
+        <!--</com.babytree.apps.pregnancy11.mypedometer.fragment.CardModuleFolderView>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="193dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/pedo_exercise_course_icon"-->
+            <!--android:scaleType="centerCrop"/>-->
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#F5F5F5"-->
+            <!--&gt;</View>-->
+
+
+        <!--<include layout="@layout/pedo_detail_all_reply_item"/>-->
+
+        <!--<include layout="@layout/pedo_detail_bottom_item"/>-->
+    <!--</LinearLayout>-->
+<!--</ScrollView>-->

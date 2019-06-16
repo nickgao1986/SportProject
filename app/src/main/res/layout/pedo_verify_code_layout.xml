@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rlImageContainer"
+                android:orientation="vertical"
+                >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="33dp"
+        android:textSize="24dp"
+        android:text="输入6位验证码"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14dp"
+        android:text="已发到：18612341234"/>
+
+    <com.nick.apps.pregnancy11.mypedometer.fragment.view.VerifyCodeView
+        android:id="@+id/verify_code_view"
+        android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:id="@+id/btn"
+            android:layout_width="315dp"
+            android:layout_height="47dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="重新获取"
+            android:gravity="center"
+            android:background="@drawable/pedo_guide_round_rectangle"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

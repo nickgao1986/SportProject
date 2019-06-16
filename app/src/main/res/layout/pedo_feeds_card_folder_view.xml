@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <TextView
+        android:id="@+id/cms_feeds_card_folder_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#181818"
+        android:textSize="17sp"
+        tools:text="开始的恢复速电费复速度回复送快递发货水电费复速度回复送快递发货水电费复速度回复送快递发货水电费复速度回复送快递发货水电费复速度回复送快递发货水电费复速度回复送快递发货水电费" />
+
+    <TextView
+        android:id="@+id/cms_feeds_card_folder_button"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cms_feeds_card_folder_content"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/cms_card_content_open"
+        android:textColor="#49c9c9"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</merge>

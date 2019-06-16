@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_style_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="15dip"
+    android:paddingTop="11dp"
+    android:visibility="visible">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_image"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dip"
+            android:paddingBottom="0dp"
+            android:maxLines="3"
+            android:text="健身教练学习课程,厦门锐思健身学院,精品小班授课,专业资格认证+专业技能认证.
+            健身教练学习课程,选锐思"
+            android:textColor="@color/black_at"
+            android:textSize="19sp" />
+
+
+        <com.nick.apps.pregnancy11.mypedometer.fragment.view.MultiImageView
+            android:id="@+id/iv_multi_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottomContent"
+        android:layout_width="wrap_content"
+        android:layout_height="28dip"
+        android:layout_below="@+id/ll_content"
+        android:layout_marginTop="6dip"
+        android:layout_toLeftOf="@+id/iv_image"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/tv_block_name_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/black_c"
+            android:textSize="@dimen/text_size_xxs_more"
+            android:text="地域小风情" />
+
+        <TextView
+            android:id="@+id/tv_comment_count_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_block_name_two"
+            android:layout_toRightOf="@id/tv_block_name_two"
+            android:maxLines="1"
+            android:textColor="@color/black_c"
+            android:textSize="@dimen/text_size_xxs_more"
+            android:text="73回复" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="28dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/all_btn_close" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_yunqi_feeds"
+        style="@style/divider"
+        android:layout_below="@id/rlBottomContent"
+        android:layout_marginTop="5dip" />
+</RelativeLayout>

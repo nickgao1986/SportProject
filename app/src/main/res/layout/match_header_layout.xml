@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+
+    <include layout="@layout/pedo_circle_topic_item"/>
+
+    <View
+        android:layout_marginTop="17dp"
+        android:layout_height="6dp"
+        android:layout_width="match_parent"
+        android:background="#F5F5F5"/>
+
+    <include layout="@layout/pedo_circle_hot_match_adapter_item"/>
+
+    <View
+        android:layout_marginTop="17dp"
+        android:layout_height="6dp"
+        android:layout_width="match_parent"
+        android:background="#F5F5F5"/>
+
+    <include layout="@layout/pedo_exercise_topic_adapter_item"/>
+
+
+
+</LinearLayout>

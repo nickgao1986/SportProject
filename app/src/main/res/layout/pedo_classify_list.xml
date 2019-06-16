@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/pedo_classify_tab_fragment_list" />
+
+    <com.nick.apps.pregnancy11.mypedometer.fragment.view.TipView
+        android:id="@+id/multi_expert_list_tipview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.nick.apps.pregnancy11.mypedometer.fragment.view.TipView>
+
+</FrameLayout>

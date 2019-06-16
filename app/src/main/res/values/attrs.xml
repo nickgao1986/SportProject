@@ -1,0 +1,21 @@
+<resources>
+
+    <declare-styleable name="ButtonSelectView">
+        <attr name="analysisContent" format="string"></attr>
+        <attr name="iconTop" format="reference"/>
+        <attr name="isMeItem" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PedoTopicView">
+        <attr name="topicContent" format="string"></attr>
+        <attr name="topicIndex" format="string"></attr>
+        <attr name="isFire" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PedoHotTopicView">
+        <attr name="hotTopicName" format="string"></attr>
+        <attr name="hotTopicDesc" format="string"></attr>
+        <attr name="hotTopicAttend" format="string"></attr>
+        <attr name="hotTopicUrl" format="reference"></attr>
+    </declare-styleable>
+</resources>

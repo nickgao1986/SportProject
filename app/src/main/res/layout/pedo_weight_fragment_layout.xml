@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/pedo_common_headbar"/>
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            >
+
+            <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                android:id="@+id/analysis_run_miles_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:analysisContent="@string/analysis_run_step"
+                app:iconTop="@drawable/pedo_analysis_run_step_icon_selector"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+            <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                android:id="@+id/analysis_step_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:analysisContent="@string/analysis_step"
+                app:iconTop="@drawable/pedo_analysis_step_icon_selector"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+            <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                android:id="@+id/analysis_calorie_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:analysisContent="@string/analysis_heart"
+                app:iconTop="@drawable/pedo_analysis_calorie_selector"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+            <com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView
+                android:id="@+id/analysis_weight_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:analysisContent="@string/analysis_weight"
+                app:iconTop="@drawable/pedo_analysis_weight_selector"></com.nick.apps.pregnancy11.mypedometer.fragment.view.ButtonSelectView>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="48dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="每日里程(米)"
+                        android:textColor="#1D253C"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#333333"
+                        android:textSize="24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="7天里程(米)"
+                        android:textColor="#1D253C"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_distance1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#333333"
+                        android:textSize="24dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@+id/topLayout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="35dp"
+                >
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

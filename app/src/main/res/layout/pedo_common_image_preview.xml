@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nick.apps.pregnancy11.mypedometer.fragment.view.DragRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                        xmlns:tools="http://schemas.android.com/tools"
+                                                                        android:id="@+id/rootview"
+                                                                        android:background="#e5e5e5"
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="match_parent"
+                                                                        android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_image_preview_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/news_image_preview_indicator_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dip"
+        android:layout_weight="1"
+        android:background="@drawable/pedo_banner_dian_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:visibility="gone"
+        tools:text="1/1" />
+</com.nick.apps.pregnancy11.mypedometer.fragment.view.DragRelativeLayout>

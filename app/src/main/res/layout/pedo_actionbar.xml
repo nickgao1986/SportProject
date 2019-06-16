@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nick.apps.pregnancy11.mypedometer.fragment.base.PedoActionBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_title_height">
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_title_height"
+        android:layout_gravity="center"
+        android:background="@drawable/action_bar_back_btn"
+        android:gravity="center"
+        android:minWidth="@dimen/actionbar_title_height"
+        android:layout_marginLeft="7dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/color_181818"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_title_height"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxEms="8"
+        android:layout_marginLeft="@dimen/actionbar_button_width_max"
+        android:layout_marginRight="@dimen/actionbar_button_width_max"
+        android:textColor="@color/color_181818"
+        android:textSize="@dimen/actionbar_title_text_size"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_title_height"
+            android:background="@drawable/action_bar_btn_bg"
+            android:gravity="center"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:lines="1"
+            android:minWidth="@dimen/actionbar_title_height"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e5e5e5"
+        android:layout_alignBottom="@+id/fl_middle"/>
+</com.nick.apps.pregnancy11.mypedometer.fragment.base.PedoActionBar>

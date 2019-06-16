@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingTop="21dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/pedo_reply_icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名称"
+            android:textColor="#666666"
+            android:textSize="13dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝宝年龄／孕期"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="4dp"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/tv_attend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="天啊！小姐姐太厉害了！佩服你的毅力！你这个健身手套哪里买的求推荐"
+            android:textColor="#181818"
+            android:textSize="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="#AAAAAA"
+                android:text="2017.07.30"
+                android:textSize="11dp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="99"-->
+                <!--android:textColor="#AAAAAA"-->
+                <!--android:drawableLeft="@drawable/pedo_detail_zan"-->
+                <!--android:drawablePadding="3dp"-->
+                <!--android:textSize="11dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--/>-->
+
+            <com.nick.apps.pregnancy11.mypedometer.fragment.view.PedoPraiseButton
+                android:id="@+id/btn_praise"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

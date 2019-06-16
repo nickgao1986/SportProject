@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlImageContainer"
+    android:layout_width="90dp"
+    android:layout_height="116dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/bb_fl_search_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/pedo_interesting_choose7"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:roundedCornerRadius="6dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_choose_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pedo_choose_interest_background"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pedo_interesting_choose" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="健身"
+        android:textColor="#666666"
+        android:textSize="13dp" />
+</LinearLayout>

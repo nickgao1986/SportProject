@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_fragment_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_fragment_list_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/rlMoreClassify"
+            android:textSize="14dp"
+            app:tabIndicatorColor="@color/color_46d0db"
+            app:tabMinWidth="28dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#49C9C9"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="#666666"/>
+
+        <RelativeLayout
+            android:id="@+id/rlMoreClassify"
+            android:layout_width="45dip"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/ivMoreClassify"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pedo_add_icon" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tab_layout"
+        android:background="@color/color_e5e5e5"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_fragment_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <LinearLayout
+        android:id="@+id/ll_special_category_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pedo_black_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_special_category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/special_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="60dp"
+                android:gravity="center"
+                android:horizontalSpacing="15dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:padding="10dip"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dip"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingLeft="16dp"
+              android:paddingTop="16dp"
+              android:paddingRight="16dp"
+             >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/bb_tv_search_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_181818"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="热门话题"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="更多"
+            android:padding="3dp"
+            android:drawableRight="@drawable/pedo_search_arrow"
+            android:visibility="gone"
+            android:textColor="#49C9C9"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootview"
+        android:orientation="vertical"
+     >
+
+        <com.nick.apps.pregnancy11.mypedometer.fragment.view.PedoHotTopicView
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginTop="10dp"
+            app:hotTopicName="@string/hot_topic_name_1"
+            app:hotTopicDesc="@string/hot_topic_description_1"
+            app:hotTopicAttend="@string/hot_topic_attend_1"
+            app:hotTopicUrl="@drawable/pedo_hot_match_icon1"
+            ></com.nick.apps.pregnancy11.mypedometer.fragment.view.PedoHotTopicView>
+
+        <com.nick.apps.pregnancy11.mypedometer.fragment.view.PedoHotTopicView
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginTop="10dp"
+            app:hotTopicName="@string/hot_topic_name_2"
+            app:hotTopicDesc="@string/hot_topic_description_2"
+            app:hotTopicAttend="@string/hot_topic_attend_2"
+            app:hotTopicUrl="@drawable/pedo_hot_match_icon2"
+            ></com.nick.apps.pregnancy11.mypedometer.fragment.view.PedoHotTopicView>
+
+    </LinearLayout>
+
+</LinearLayout>

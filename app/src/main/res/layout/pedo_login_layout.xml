@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rlImageContainer"
+                >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="35dp"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_marginTop="21dp"
+            android:textSize="24dp"
+            android:text="账号登录"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/username_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pedo_username_icon"/>
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/username_icon"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:hint="请输入手机号"
+                android:layout_marginTop="36dp"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="17dp"
+                />
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/user_name_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_eeeeee"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/password_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pedo_password_review"/>
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/password_icon"
+                android:id="@+id/password"
+                android:hint="请输入登录密码"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="36dp"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="17dp"
+                />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_eeeeee"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="315dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerHorizontal="true"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/pedo_guide_round_rectangle"/>
+
+
+    <TextView
+        android:layout_below="@+id/btn"
+        android:id="@+id/phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:text="手机验证码登录"/>
+
+
+    <LinearLayout
+        android:layout_above="@+id/weixin_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#DBE3F2">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAB5CA"
+            android:layout_centerHorizontal="true"
+            android:textSize="11dp"
+            android:text="快速登录"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#DBE3F2">
+        </View>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/weixin_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pedo_weixin_icon"/>
+
+</RelativeLayout>

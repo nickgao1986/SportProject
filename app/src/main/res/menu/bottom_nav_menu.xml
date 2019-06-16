@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/pedo_main_run_step_icon_selector"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/pedo_main_analysis_icon_selector"
+        android:title="@string/title_list" />
+    <item
+        android:id="@+id/form"
+        android:icon="@drawable/pedo_main_race_unselected"
+        android:title="@string/title_detail" />
+
+    <item
+        android:id="@+id/form1"
+        android:icon="@drawable/pedo_main_me_unselected"
+        android:title="@string/title_me" />
+
+</menu>
